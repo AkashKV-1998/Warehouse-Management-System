@@ -1,0 +1,44 @@
+{% extends "productDetails/base.html" %}
+{% block content %}
+<style>
+    
+    .btn-grad {background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: inline-block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+</style>
+<div class="row text-center">
+    <div class="col-md-12">
+        <div class="col-md-12">
+            <a href="{% url 'product' %}" class="btn-grad">Add Products</a>
+            <a href="{% url 'category' %}" class="btn-grad">Add Category</a>
+            <a href="{% url 'manufacturer' %}" class="btn-grad">Add Manufacturer</a>
+        </div>
+    </div>
+</div>
+<div class="row text-center">
+    <div class="col-md-12">
+        <div class="col-md-12">
+            <a href="{% url 'order' %}" class="btn-grad">Order and Find</a>
+            <a href="{% url 'suggestions' %}" class="btn-grad">Suggestions</a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
