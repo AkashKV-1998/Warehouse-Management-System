@@ -106,11 +106,14 @@ graph , producing a shortest-path tree.
 ● Dijkstra's Algorithm starts at the source node and it analyzes the graph to
 find the shortest path between that node and all the other nodes in the
 graph.
+
 ● The algorithm keeps track of the currently known shortest distance from
 each node to the source node and it updates these values if it finds a
 shorter path.
+
 ● Once the algorithm has found the shortest path between the source node
 and another node, that node is marked as "visited" and added to the path.
+
 ● The process continues until all the nodes in the graph have been added to
 the path. This way, we have a path that connects the source node to all
 other nodes following the shortest path possible to reach each node.
@@ -125,19 +128,26 @@ Thus the application in warehouse problem is more valid and time saving as
 once the algorithm goes through all the node possibilities it automatically
 provides with a shortest possible distance the object can be accessed thus
 improves the efficiency of the warehouse.
-Steps in finding the shortest path of warehouse management problem
+
+Steps in finding the shortest path of warehouse management problem:
+
 ● Set a root node
+
 ● Iterating through all the unvisited route
+
 ● Setting all the nodes shortest distance is infinity to be updated in further
 iterations
+
 · Running the iteration to all the unvisited nodes and update the path for the
 shortest distance
 
 o Where the current node is kept in memory and the weight of the
 subsequent node is added
+
 o If the value of the added combination of the path is lesser than
 the previous distance in any iteration then the distance is
 updated
+
 · Same way all the connected nodes of the network are compared and the least
 possible path is updated and printed for both the employee for accessing the
 rack and the customer it provides an interface and transparency.
