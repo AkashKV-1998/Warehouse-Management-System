@@ -154,7 +154,7 @@ The whole customer interface is provided by a django model where the user
 enters all the information about the object and the shortest path is displayed
 after all the process is carried out in the back end.
 
-5. Conclusion
+#### 5. Conclusion
 
 It is necessary to have a proper management system for busy and complex
 warehouses. It is difficult to stock the items in the most suitable locations
@@ -179,7 +179,7 @@ By using this workers can identify which product is sold frequently and
 reassign the rack according to that and efficiently manage the
 Warehouses.
 
-6. References
+#### 6. References
 
 1. Theys, C., Braysy, O., Dullaert, W., Raa, B., 2010. Using a TSP heuristic for
 routing order pickers in warehouses. European Journal of Operational
