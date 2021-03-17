@@ -1,0 +1,72 @@
+{% extends "productDetails/base.html" %}
+{% block content %}
+<h3>
+    Suggestions
+</h3>
+<div class="col-md-10" style="font-size: 20px; padding: 20px;">
+<table  style="width: 100%;">
+    <thead>
+    <tr class="mx-2 my-2">
+        <td class="mx-2">
+            Rank
+        </td>
+        <td>
+            Product Name
+        </td>
+        <td>
+            Current Rack
+        </td>
+        <td>
+            Orders
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>
+            1
+        </td>
+        <td>
+            {{ datalist.0 }}
+        </td>
+        <td>
+            {{ datalist.1 }}
+        </td>
+        <td>
+            {{ datalist.2 }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            2
+        </td>
+        <td>
+            {{ datalist.3 }}
+        </td>
+        <td>
+            {{ datalist.4 }}
+        </td>
+        <td>
+            {{ datalist.5 }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            3
+        </td>
+        <td>
+            {{ datalist.6 }}
+        </td>
+        <td>
+            {{ datalist.7 }}
+        </td>
+        <td>
+            {{ datalist.8 }}
+        </td>
+    </tr>
+    </tbody>
+
+    
+</table>
+</div>
+{% endblock content %}
