@@ -11,9 +11,8 @@ The warehouse management system is a combinatorial optimization problem, where g
 1. Introduction 
 2. Problem and Solution 
 3. Implementation 
-4. Experimentation Result 
-5. Conclusion 
-6. References 
+4. Conclusion 
+5. References 
 
 ### 1. Introduction
 
@@ -154,57 +153,6 @@ rack and the customer it provides an interface and transparency.
 The whole customer interface is provided by a django model where the user
 enters all the information about the object and the shortest path is displayed
 after all the process is carried out in the back end.
-
-
-4. Code design
-
-def Dijkstra (graph,source,target) :
-unvisited_nodes=graph
-shortest_distance={}
-route=[]
-predecessor={}
-for nodes in unvisited_nodes:
-    shortest_distance[nodes]=float( 'inf' )
-    shortest_distance[source]= 0
-    while (unvisited_nodes):
-      min_Node= None
-      for current_node in unvisited_nodes:
-        if min_Node is None :
-          min_Node=current_node
-        elif shortest_distance[min_Node] > shortest_distance[current_node]:
-          min_Node=current_node
-     for child_node,value in unvisited_nodes[min_Node].items():
-        if value + shortest_distance[min_Node] < shortest_distance[child_node]:
-        shortest_distance[child_node] = value + shortest_distance[min_Node]
-        predecessor[child_node] = min_Node
-        unvisited_nodes.pop(min_Node)
-        node = target
-        while node != source:
-            try :
-                route.insert( 0 ,node)
-                node = predecessor[node]
-             except Exception:
-                print( 'Path not reachable' )
-                break
-        route.insert( 0 ,source)
-
-####If the node has been visited,####
-
-if shortest_distance[target] != float( 'inf' ):
-
-####print the shortest distance and the path taken####
-
-  print( 'Shortest distance is ' + str(shortest_distance[target]))
-  print( 'And the path is ' + str(route))
-  return route
-graph =
-{ 'a' :{ 'a' : 0 , 'b' : 2 , 'c' : 7 , 'g' : 4 }, 'b' :{ 'b' : 0 , 'a' : 2 , 'j' : 4 , 'd' : 6 }, 'c' :{ 'c' : 0 , 'a' : 7 ,
-'g' : 5 , 'h' : 3 , 'd' : 2 }, 'd' :{ 'd' : 0 , 'b' : 6 , 'c' : 2 , 'e' : 1 }, 'e' :{ 'e' : 0 , 'd' : 1 , 'j' : 8 , 'f' : 1 ,
-'h' : 2 }, 'f' :{ 'f' : 0 , 'e' : 1 , 'h' : 5 , 'i' : 4 , 'k' : 3 }, 'g' :{ 'g' : 0 , 'a' : 4 , 'c' : 5 , 'h' : 2 }, 'h' :{
-'h' : 0 , 'g' : 2 , 'c' : 3 , 'e' : 2 , 'f' : 5 , 'i' : 6 }, 'i' :{ 'i' : 0 , 'f' : 4 , 'h' : 6 , 'k' : 9 }, 'j' :{ 'j' : 0 ,
-'b' : 4 , 'e' : 8 , 'k' : 5 }, 'k' :{ 'k' : 0 , 'j' : 5 , 'f' : 3 , 'i' : 9 }}
-#Calling the function with source as 'a' and target as 'e'.
-sa = Dijkstra(graph, 'a' ,rackno)
 
 5. Conclusion
 
