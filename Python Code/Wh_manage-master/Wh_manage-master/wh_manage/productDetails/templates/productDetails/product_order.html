@@ -1,0 +1,24 @@
+{% extends "productDetails/base.html" %}
+{% block content %}
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Rack No</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in productdetails%}
+        <tr>
+            <td>{{product.product_Name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.rack_No}}</td>
+            <td>
+                <a href="{% url 'product_path' value=product.id %}">Order and Find Path</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
