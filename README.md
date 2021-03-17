@@ -14,7 +14,7 @@ The warehouse management system is a combinatorial optimization problem, where g
 4. Conclusion 
 5. References 
 
-### 1. Introduction
+#### 1. Introduction
 
 A common goal of nearly all businesses is to reduce man-hour and increase the
 overall profit margin of the business. In warehouse related businesses,
@@ -41,7 +41,7 @@ area. Once in shipping, the order will be packaged in a box or pallet and
 shipped to the customer. The picking process can be time consuming and by
 far is the biggest operational expense of any warehouse.
 
-### 2. Problem and Solution
+#### 2. Problem and Solution
 
 
 The main objective of this project is, when an order for a product is placed by
@@ -70,7 +70,7 @@ edges (links) E. Thus G=(V, E).
 Therefore ,Here we are using a graph G= (11,18)
 The graph G is connected and cyclic.
 
-### 3.Implementation
+#### 3.Implementation
 
 
 Now, warehouses stay competitive by optimizing every possible area of work
@@ -100,7 +100,7 @@ With Dijkstra's Algorithm, you can find the shortest path between nodes in a
 graph. It can find the shortest path from a node to all other nodes in the
 graph , producing a shortest-path tree.
 
-### Basics of Dijkstra's Algorithm
+##### Basics of Dijkstra's Algorithm
 
 ● Dijkstra's Algorithm starts at the source node and it analyzes the graph to
 find the shortest path between that node and all the other nodes in the
