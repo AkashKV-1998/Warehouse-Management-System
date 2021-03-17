@@ -1,0 +1,16 @@
+{% extends "productDetails/base.html" %}
+{% block content %}
+<table>
+<form action="" method="POST" autocomplete="off">
+    <div class="form-group">
+        {% csrf_token %}
+        {{form}}
+    </div>
+    
+    <div>
+        <button class="btn btn-success">Submit</button>
+    </div>
+
+</form>
+</table>
+{% endblock content %}
